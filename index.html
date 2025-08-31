@@ -28,53 +28,33 @@
     font-weight: bold;
     cursor: pointer;
   }
+  .table-scroll {
+    overflow-x: auto;
+  }
   table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 1em;
-    background: white;
-    border-radius: 8px;
-    overflow: hidden;
-    table-layout: fixed;
+    min-width: 600px;
   }
   th, td {
     padding: 0.7em;
     text-align: left;
     border-bottom: 1px solid #ccc;
-    word-wrap: break-word;
+    word-break: break-word;
   }
   th:nth-child(1), td:nth-child(1) { width: 15%; }
   th:nth-child(2), td:nth-child(2) { width: 35%; }
   th:nth-child(3), td:nth-child(3) { width: 10%; }
   th:nth-child(4), td:nth-child(4) { width: 25%; }
   th:nth-child(5), td:nth-child(5) { width: 15%; }
-  th { background: #eaeaea; }
+  th {
+    background: #eaeaea;
+  }
   a {
     color: #DC143C;
     font-weight: bold;
     text-decoration: underline;
-  }
-  @media (max-width: 600px) {
-    table, thead, tbody, th, td, tr {
-      display: block;
-    }
-    th {
-      position: absolute;
-      top: -9999px;
-      left: -9999px;
-    }
-    td {
-      padding-left: 1em;
-      border: none;
-      border-bottom: 1px solid #ccc;
-    }
-    td::before {
-      content: attr(data-label);
-      font-weight: bold;
-      display: block;
-      margin-bottom: 2px;
-      opacity: 0.7;
-    }
   }
 </style>
 </head>
@@ -83,27 +63,31 @@
 
 <details>
   <summary>✈️ Prior to Departure</summary>
+  <div class="table-scroll">
   <table>
     <thead>
       <tr><th>Item</th><th>Description</th><th>Price</th><th>Task</th><th>URL</th></tr>
     </thead>
     <tbody>
-      <tr><td data-label="Item">Google Translate</td><td data-label="Description">Translation app with offline mode.</td><td data-label="Price">Free</td><td data-label="Task">Download app & language pack.</td><td data-label="URL"><a href="https://play.google.com/store/apps/details?id=com.google.android.apps.translate">Link</a></td></tr>
-      <tr><td data-label="Item">Visit Japan Web</td><td data-label="Description">Mobile site for customs & immigration QR code.</td><td data-label="Price">Free</td><td data-label="Task">Register before departure.</td><td data-label="URL"><a href="https://www.vjw.digital.go.jp/main/#/vjwplo001">Link</a></td></tr>
+      <tr><td>Google Translate</td><td>Translation app with offline mode.</td><td>Free</td><td>Download app & language pack.</td><td><a href="https://play.google.com/store/apps/details?id=com.google.android.apps.translate">Link</a></td></tr>
+      <tr><td>Visit Japan Web</td><td>Mobile site for customs & immigration QR code.</td><td>Free</td><td>Register before departure.</td><td><a href="https://www.vjw.digital.go.jp/main/#/vjwplo001">Link</a></td></tr>
     </tbody>
   </table>
+  </div>
 </details>
 
 <details>
   <summary>🛬 On Arrival</summary>
+  <div class="table-scroll">
   <table>
     <thead>
       <tr><th>Item</th><th>Description</th><th>Price</th><th>Task</th><th>URL</th></tr>
     </thead>
     <tbody>
-      <tr><td data-label="Item">ICOCA Card</td><td data-label="Description">Rechargeable transport smart card.</td><td data-label="Price">¥1500</td><td data-label="Task">Purchase at KIX Airport.</td><td data-label="URL"><a href="https://www.klook.com/en-AU/activity/1754-icoca-ic-card-osaka/">Link</a></td></tr>
+      <tr><td>ICOCA Card</td><td>Rechargeable transport smart card.</td><td>¥1500</td><td>Purchase at KIX Airport.</td><td><a href="https://www.klook.com/en-AU/activity/1754-icoca-ic-card-osaka/">Link</a></td></tr>
     </tbody>
   </table>
+  </div>
 </details>
 
 <script>
