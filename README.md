@@ -1,4 +1,4 @@
-# 🧳 Japan Travel Tasks
+# 📋 Japan Travel Tasks
 
 This repository contains a mobile-friendly, collapsible **checklist** for all pre-departure and on-arrival tasks for Japan.
 
