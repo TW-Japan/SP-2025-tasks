@@ -1,6 +1,6 @@
-# 🧳 Japan 2025 Travel Tasks
+# 🧳 Japan Travel Tasks
 
-This repository contains a mobile-friendly, collapsible **checklist and task manager** for all pre-departure and on-arrival tasks for Japan 2025.
+This repository contains a mobile-friendly, collapsible **checklist** for all pre-departure and on-arrival tasks for Japan.
 
 ## ✅ Live Site
 
@@ -30,3 +30,4 @@ Once deployed via GitHub Pages, access the live guide here:
 ## 📄 License
 
 This project is open for personal use and adaptation.
+
